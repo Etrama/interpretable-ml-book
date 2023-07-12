@@ -40,6 +40,7 @@ A confidence interval is a range for the weight estimate that covers the "true" 
 For example, a 95% confidence interval for a weight of 2 could range from 1 to 3.
 The interpretation of this interval would be:
 If we repeated the estimation 100 times with newly sampled data, the confidence interval would include the true weight in 95 out of 100 cases, given that the linear regression model is the correct model for the data.
+Said simply, we have 95% confidence that the the true weight is in the given interval.
 
 Whether the model is the "correct" model depends on whether the relationships in the data meet certain assumptions, which are linearity, normality, homoscedasticity, independence, fixed features, and absence of multicollinearity.
 
@@ -56,7 +57,7 @@ If this assumption is violated, the estimated confidence intervals of the featur
 
 **Homoscedasticity** (constant variance)  
 The variance of the error terms is assumed to be constant over the entire feature space.
-Suppose you want to predict the value of a house given the living area in square meters.
+Suppose you want to predict the value of a house, given the living area in square meters.
 You estimate a linear model that assumes that, regardless of the size of the house, the error around the predicted response has the same variance.
 This assumption is often violated in reality.
 In the house example, it is plausible that the variance of error terms around the predicted price is higher for larger houses, since prices are higher and there is more room for price fluctuations.
